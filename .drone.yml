@@ -1,7 +1,7 @@
 
 pipeline:
   checkout-master:
-    image: plugin/git
+    image: plugins/git
     commands:
       - git fetch master
       - git checkout master
