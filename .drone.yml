@@ -2,9 +2,7 @@ clone:
   git:
     image: plugins/git
     commands:
-      - git clone ${CI_REMOTE_URL} .
-      - git fetch origin master
-      - git checkout master
+      - git clone -b master ${CI_REMOTE_URL} .
 
 pipeline:
 
