@@ -1,4 +1,3 @@
-branches: master
 
 pipeline:
   checkout-master:
