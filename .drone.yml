@@ -1,12 +1,11 @@
-
-pipeline:
-  checkout-master:
+clone
+  git:
     image: plugins/git
     commands:
       - git fetch origin master
       - git checkout master
-    when:
-      event: push
+
+pipeline:
 
   build:
     image: node:latest
