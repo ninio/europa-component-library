@@ -2,7 +2,7 @@ clone:
   git:
     image: plugins/git
     commands:
-      - export 
+      - git clone ${CI_REMOTE_URL} .
       - git fetch origin master
       - git checkout master
 
