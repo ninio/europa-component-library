@@ -1,6 +1,14 @@
 branches: master
 
 pipeline:
+  checkout-master:
+    image: plugin/git
+    commands:
+      - git fetch master
+      - git checkout master
+    when:
+      event: push
+
   build:
     image: node:latest
     commands:
