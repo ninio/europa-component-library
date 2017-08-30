@@ -2,6 +2,7 @@ clone:
   git:
     image: plugins/git
     commands:
+      - ls
       - git fetch origin master
       - git checkout master
 
