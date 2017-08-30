@@ -1,4 +1,4 @@
-clone
+clone:
   git:
     image: plugins/git
     commands:
